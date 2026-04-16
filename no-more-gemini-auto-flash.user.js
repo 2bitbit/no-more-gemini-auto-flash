@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         No More Gemini Auto Flash
 // @namespace    https://github.com/no-more-gemini-auto-flash
-// @version      1.0.0
-// @description  当 Gemini 自动切换到 Flash（快速）模型时，弹出醒目的红色警告框
+// @version      1.1.0
+// @description  当 Gemini 自动切换到 Flash（快速）模型时，弹出醒目的红色警告框。后续：作者发现Thinking模式即使是解决简单问题也常常误导人，十分可恶，还是all in pro叭！
 // @author       You
 // @match        https://gemini.google.com/*
 // @grant        unsafeWindow
@@ -12,9 +12,9 @@
 (function () {
   'use strict';
 
-  console.log('[NMGAF] ====== No More Gemini Auto Flash v1.6.0 已启动 ======');
+  console.log('[NMGAF] ====== No More Gemini Auto Flash v1.1.0 已启动 ======');
 
-  const FLASH_KEYWORDS = ['快速', 'Fast', 'flash', 'Flash'];
+  const FLASH_KEYWORDS = ['快速', 'Fast', 'flash', 'Flash','Thinking','思考'];
   const ALERT_ID = 'nmgaf-flash-warning';
   const STYLE_ID = 'nmgaf-style';
   const CHECK_INTERVAL = 1000;
@@ -62,7 +62,7 @@
     }, ['\u26A0\uFE0F']); // ⚠️
 
     // 主标题
-    const flashSpan = el('span', { textDecoration: 'underline' }, ['Flash']);
+    const flashSpan = el('span', { textDecoration: 'underline' }, ['Flash 或 Thinking']);
     const title = el('div', {}, ['模型已切换为 ']);
     title.appendChild(flashSpan);
 
