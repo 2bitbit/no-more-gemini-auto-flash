@@ -14,7 +14,7 @@
 
   console.log('[NMGAF] ====== No More Gemini Auto Flash v1.1.0 已启动 ======');
 
-  const FLASH_KEYWORDS = ['快速', 'Fast', 'flash', 'Flash','Thinking','思考'];
+  const FLASH_KEYWORDS = ['快速', 'Fast', 'flash', 'Flash', 'Thinking', '思考', 'lite'];
   const ALERT_ID = 'nmgaf-flash-warning';
   const STYLE_ID = 'nmgaf-style';
   const CHECK_INTERVAL = 1000;
