@@ -14,7 +14,7 @@
 
   console.log('[NMGAF] ====== No More Gemini Auto Flash v1.1.0 已启动 ======');
 
-  const FLASH_KEYWORDS = ['快速', 'Fast', 'flash', 'Flash', 'Thinking', '思考', 'lite'];
+  const FLASH_KEYWORDS = ['快速', 'Fast', 'flash', 'Flash','Flash-Lite','Thinking', '思考', 'lite'];
   const ALERT_ID = 'nmgaf-flash-warning';
   const STYLE_ID = 'nmgaf-style';
   const CHECK_INTERVAL = 1000;
@@ -62,7 +62,7 @@
     }, ['\u26A0\uFE0F']); // ⚠️
 
     // 主标题
-    const flashSpan = el('span', { textDecoration: 'underline' }, ['Flash 或 Thinking']);
+    const flashSpan = el('span', { textDecoration: 'underline' }, ['Flash']);
     const title = el('div', {}, ['模型已切换为 ']);
     title.appendChild(flashSpan);
 
